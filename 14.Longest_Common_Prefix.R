@@ -1,3 +1,5 @@
+##Time cost: 15min from speaking, coding to testing. 3 bugs remaining. line 24: cp should be cparr. 
+
 LCP <- function(strlist){
   if(length(strlist)==1){
     return(strlist[1])

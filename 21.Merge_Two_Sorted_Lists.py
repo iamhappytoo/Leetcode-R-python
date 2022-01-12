@@ -1,4 +1,4 @@
-##My Solution 
+##My Solution From hearing, speaking to coding in total 11min. Too long and not efficient. No bug. 
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, val=0, next=None):

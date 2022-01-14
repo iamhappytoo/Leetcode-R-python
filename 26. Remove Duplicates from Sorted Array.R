@@ -5,12 +5,12 @@ removeduplicates <- function(nums){
   pt = 1
   k=0
   len=length(nums)
-  while(pt<len & (!is.na(nums[pt+1]))){
+  while(pt<len & (!is.na(nums[pt+1]))){ ##Here I forgot to include is.na(nums[pt+1]) in this loop. 
     if(nums[pt] == nums[pt+1]){
       val=nums[pt]
       maxps=max(which(nums == val))
       if(maxps<len){
-        nums[(pt+1):(len-(maxps-pt))]=nums[(maxps+1):len]
+        nums[(pt+1):(len-(maxps-pt))]=nums[(maxps+1):len] ##Be careful with this maxps terms
         nums[((len-(maxps-pt))+1):len]=NA
       }else{
         nums[(pt+1):len]=NA

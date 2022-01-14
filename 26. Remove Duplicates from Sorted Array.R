@@ -25,3 +25,18 @@ removeduplicates <- function(nums){
 nums=c(0,0,1,1,1,2,2,3,3,4)
 removeduplicates(nums)
 
+removeduplicates <- function(nums){
+  if(length(nums) <=  1){
+      return(length(nums))
+  }
+  i = 1
+  j = 2
+  while(j <= length(nums)){
+    if(nums[j] != nums[i]){
+      i=i+1
+      nums[i]=nums[j]
+    }
+    j= j+1
+  }
+  return(i)
+}

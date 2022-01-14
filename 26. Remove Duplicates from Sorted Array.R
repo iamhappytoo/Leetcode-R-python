@@ -24,7 +24,7 @@ removeduplicates <- function(nums){
 
 nums=c(0,0,1,1,1,2,2,3,3,4)
 removeduplicates(nums)
-
+###Another way to do that
 removeduplicates <- function(nums){
   if(length(nums) <=  1){
       return(length(nums))

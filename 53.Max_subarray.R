@@ -54,3 +54,14 @@ class Solution:
         # Our helper function is designed to solve this problem for
         # any array - so just call it using the entire input!
         return findBestSubarray(nums, 0, len(nums) - 1)
+
+
+class Solution:
+    def maxSubArray(self, nums: List[int]) -> int:
+        maxsum = nums[0]
+        subarray = nums[0]
+        for num in nums[1:]:
+            subarray = max(num, subarray+num)
+            maxsum = max(maxsum, subarray)
+        
+        return maxsum

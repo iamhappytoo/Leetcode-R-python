@@ -27,3 +27,5 @@ class Solution:
         ans['.'.join(frags[i:])]+=count
        
       return ["{} {}".format(cnt,dom) for dom, cnt in ans.items()]
+
+###Space complexity: O(n), time complexity: O(n), because the domain length has maximum limit, a constant.  

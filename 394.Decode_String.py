@@ -25,3 +25,5 @@ class Solution:
         return currentString
       
       
+##Time complexity: O(maxK*n), n is the size of the string, and k is the max number. 
+##Space complexity: O(m+n), m is the number of alphabets, and n is the number of digits. for store in the stack, and other constant space for storing the strings and current K.

@@ -19,3 +19,19 @@ class Solution:
         return -1     
       
       
+##Use hashcode to change the time complexity to O(m+n):
+class Solution:
+    def strStr(self, haystack: str, needle: str) -> int:
+        if not haystack or not needle:
+            return -1 
+        m = len(needle)
+        if m == 0 or m > len(haystack):
+            return -1
+        hashtarget = hash(needle)
+        for i in range(len(haystack) - m + 1):
+            if hash(haystack[i:(i + m)]) != hashtarget:
+                continue
+            else:
+                if haystack[i:(i + m)] == needle:
+                    return i
+        return -1 
